@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+<div class="container">
+
+    <form action="/" method="get" autocomplete="off">
+        <input type="text" name="t" class="text" value="{{ text }}">
+        <input type="submit" value="ぴえんQR作成"/>
+    </form>
+
+    {% for  row in matrix %}
+        <p>
+            {% for val in row %}
+                {% if val %}
+                    🥺
+                {% else %}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {% endif %}
+            {% endfor %}
+        <p>
+    {% endfor %}
+</div>
+</body>
+</html>
