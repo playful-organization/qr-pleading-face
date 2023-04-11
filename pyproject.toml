@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "meltone"
+version = "0.1.0"
+description = ""
+authors = ["solution@seed-it.jp"]
+
+[tool.poetry.dependencies]
+python = "^3.9.12"
+qrcode = "^7.4.2"
+Flask = "^2.2.3"
+
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.black]
+
+[tool.isort]
+
+[tool.mypy]
+python_version = "3.9"
+
+[tool.poe.tasks]
+
+[build-system]
